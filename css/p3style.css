@@ -41,7 +41,7 @@ header {
 
 /* BIG MAP CONTAINER */
 .main-chart .d3-container {
-  width: 78%;
+  width: 100%;
   max-width: 1200px;
   height: 600px;
   border-radius: 12px;

@@ -13,8 +13,17 @@
   <header>
     <h1>COVID-19 in France</h1>
   </header>
-
+  
   <div class="main-chart">
+    
+    <div id="controls">
+      <select id="dataset-select">
+        <option value="tx">Incidence</option>
+        <option value="to">Occupancy</option>
+        <option value="r">Virus Reproduction</option>
+      </select>
+    </div>
+
     <div class="d3-container" id="chart1"></div>
   </div>
 
