@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>COVID-19 in France</title>
+
+  <link rel="stylesheet" type="text/css" href="css/p3style.css">
+</head>
+<body>
+
+  <header>
+    <h1>COVID-19 in France</h1>
+  </header>
+
+  <div class="main-chart">
+    <div class="d3-container" id="chart1"></div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="figures/covid_cases.png" />
+    </div>
+
+    <div class="card">
+      <img src="figures/covid_deaths.png" />
+    </div>
+
+    <div class="card">
+      <img src="figures/covid_vacs.png" />
+    </div>
+  </div>
+
+  <div class = main-chart>
+      <img src="figures/covid_complete.png" />
+  </div>
+
+  <div class="main-chart">
+    <div class="d3-container" id="chart5"></div>
+  </div>
+
+  <footer>
+    Made By Danny Benish
+  </footer>
+
+    <div id="overlay">
+      <img id="overlay-img">
+    </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+  <script src="script/france_map.js"></script>
+  <script src="script/fullscreen.js"></script>
+  <script src="script/sankey.js"></script>
+
+</body>
+
+</html>
