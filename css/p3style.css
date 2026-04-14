@@ -32,11 +32,19 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
+  #map-text {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex:1;
+  }
+
 .main-chart {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 40px;
+  align-items: center;
 }
 
 /* BIG MAP CONTAINER */
@@ -45,6 +53,7 @@ header {
   max-width: 1200px;
   height: 600px;
   border-radius: 12px;
+  flex:3;
 }
 
 
@@ -107,10 +116,18 @@ header {
 
   background: rgba(0,0,0,0.9);
   display: none;
+  flex-direction: column; /* stack vertically */
   justify-content: center;
   align-items: center;
 
   z-index: 9999;
+}
+
+#overlay-text {
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 /* image fullscreen */
@@ -124,6 +141,8 @@ header {
   width: 50%;
   height: 50%;
 }
+
+
 
 footer {
   text-align: center;

@@ -27,17 +27,19 @@
     <div class="d3-container" id="chart1"></div>
   </div>
 
+  <div id="map-text"></div>
+
   <div class="container">
 
-    <div class="card">
+    <div class="card" id="chart2">
       <img src="figures/covid_cases.png" />
     </div>
 
-    <div class="card">
+    <div class="card" id="chart3">
       <img src="figures/covid_deaths.png" />
     </div>
 
-    <div class="card">
+    <div class="card" id="chart4">
       <img src="figures/covid_vacs.png" />
     </div>
   </div>
@@ -46,21 +48,36 @@
       <img src="figures/covid_complete.png" />
   </div>
 
-  <div class="main-chart">
-    <div class="d3-container" id="chart5"></div>
+  <div id="map-text">
+    <p>Graphing each incidence graph against each other on log scale shows the relationship between the different indicators. Case incidence and death incidence patterns obviously show strong correlation. 
+      Higher rates of positive tests is nearly always followed in a spike in the death count. The growth of the pandemic seems to be stemmed in early 2021, likely from the vaccine release, social distancing measures,
+      or a combination of both. Something surprising is the magnitude of the Omicron spike in 2022, when death and positive rates rose back to peak pandemic levels. Cumulative deaths are graphed as the red area on this chart.
+      The vast majority of deaths were recorded early in the pandemic. This could be due to medical care improving as knowledge of the disease advanced, but could also be due to the total death count from before the recording period
+      all being collected at once.</p>
   </div>
 
-  <footer>
-    Made By Danny Benish
-  </footer>
+  <div class="main-chart">
+    <!-- <div class="d3-container" id="chart5"></div> -->
+      <div id="map-text">
+      <p>Investigating data sets of this scale led to some interesting inconsistencies.
+         One big discrepancy that kept occurring had to do with differences between incidence numbers and cumulative statistics.
+        Very often summing incidences did not match reported cumulative numbers. Furthermore, counts from WHO vs. France's Public
+        Health Agency sometimes varied. This project demonstrated how easily inconsistencies can arise during such a concentrated and high-pressure
+        environment like the COVID pandemic, and how important it is to investigate your data sources carefully.</p>
+  </div>
+  </div>
 
-    <div id="overlay">
-      <img id="overlay-img">
-    </div>
+
+
+  <div id="overlay">
+    <img id="overlay-img">
+    <div id="overlay-text"></div>
+  </div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
   <script src="script/france_map.js"></script>
+  <script src="script/map_text.js"></script>
   <script src="script/fullscreen.js"></script>
   <script src="script/sankey.js"></script>
 
