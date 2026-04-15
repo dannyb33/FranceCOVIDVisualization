@@ -32,13 +32,6 @@ header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-  #map-text {
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    flex:1;
-  }
-
 .main-chart {
   width: 100%;
   display: flex;
@@ -53,9 +46,42 @@ header {
   max-width: 1200px;
   height: 600px;
   border-radius: 12px;
-  flex:3;
+  flex:2;
 }
 
+.main-chart .secondary-card {
+  flex:0.7;
+}
+
+.container .card {
+    transition: transform 0.2s ease;
+}
+
+#map-text {
+  text-align: center;
+  font-size: medium;
+  padding:20px;
+}
+
+
+#secondary-chart-text {
+  text-align: center;
+  font-size: medium;
+}
+
+#box-text {
+  text-align: center;
+  font-size: medium;
+  padding:20px;
+  object-position: center;
+}
+
+.secondary-chart #box-text {
+  text-align: center;
+  font-size: small;
+  padding:20px;
+  object-position: center;
+}
 
 .container {
   display: grid;
@@ -69,6 +95,23 @@ header {
   width: 50%;            /* optional: makes it look centered */
 }
 
+.secondary-chart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top:60px;
+  padding:20px;
+}
+
+.secondary-chart .secondary-card {
+  transform: translateY(-45px);
+  flex:2
+}
+
+.img-container {
+  flex:4
+}
+
 .card {
   background: white;
   border-radius: 12px;
@@ -76,7 +119,19 @@ header {
   cursor: pointer;
 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  align-items: center;
+  display: flex;
+}
+
+.secondary-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: center;
+  display: flex;
 }
 
 .card:hover {

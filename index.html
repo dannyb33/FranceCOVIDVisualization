@@ -25,9 +25,13 @@
     </div>
 
     <div class="d3-container" id="chart1"></div>
+
+    <div class="secondary-card">
+      <div id="map-text"></div>
+    </div>
   </div>
 
-  <div id="map-text"></div>
+  
 
   <div class="container">
 
@@ -44,21 +48,29 @@
     </div>
   </div>
 
-  <div class = main-chart>
-      <img src="figures/covid_complete.png" />
-  </div>
+  <div class = secondary-chart>
 
-  <div id="map-text">
-    <p>Graphing each incidence graph against each other on log scale shows the relationship between the different indicators. Case incidence and death incidence patterns obviously show strong correlation. 
-      Higher rates of positive tests is nearly always followed in a spike in the death count. The growth of the pandemic seems to be stemmed in early 2021, likely from the vaccine release, social distancing measures,
-      or a combination of both. Something surprising is the magnitude of the Omicron spike in 2022, when death and positive rates rose back to peak pandemic levels. Cumulative deaths are graphed as the red area on this chart.
-      The vast majority of deaths were recorded early in the pandemic. This could be due to medical care improving as knowledge of the disease advanced, but could also be due to the total death count from before the recording period
-      all being collected at once. [2, 3]</p>
+      <div class="img-container">
+        <img src="figures/covid_complete.png" />
+        <div id="secondary-chart-text">
+          <p>Graphing each incidence graph against each other on log scale shows the relationship between the different indicators. [2, 3]</p>
+        </div>
+      </div>
+
+      <div class="secondary-card">
+        <div>
+          <p id="box-text">Case incidence and death incidence patterns obviously show strong correlation. 
+          Higher rates of positive tests is nearly always followed in a spike in the death count.</p>
+
+          <p id="box-text">Cumulative deaths are graphed as the red area on this chart. The vast majority of deaths were recorded early in the pandemic. This could be due to medical care improving as knowledge of the disease advanced, but could also be due to the total death count from before the recording period all being collected at once.</p>
+        </div>
+      </div>
   </div>
 
   <div class="main-chart">
     <!-- <div class="d3-container" id="chart5"></div> -->
       <div id="map-text">
+        <h3>Note:</h3>
       <p>Investigating data sets of this scale led to some interesting inconsistencies.
          One big discrepancy that kept occurring had to do with differences between incidence numbers and cumulative statistics.
         Very often summing incidences did not match reported cumulative numbers. Furthermore, counts from WHO vs. France's Public
